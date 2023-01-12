@@ -27,6 +27,10 @@
 		4DDFC2AD296F375800662BE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4DDFC2AF296F375800662BE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DDFC2B6296F378800662BE2 /* Strings.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Strings.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		4DDFC2B7297050D600662BE2 /* Dictionary.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Dictionary.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		4DDFC2B82970623100662BE2 /* Enums.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Enums.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		4DDFC2B929708AAF00662BE2 /* ClousereAndFuncs.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ClousereAndFuncs.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		4DDFC2BA2970925100662BE2 /* SwiftAvanzado.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SwiftAvanzado.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,10 @@
 			isa = PBXGroup;
 			children = (
 				4DDFC2B6296F378800662BE2 /* Strings.playground */,
+				4DDFC2B7297050D600662BE2 /* Dictionary.playground */,
+				4DDFC2B82970623100662BE2 /* Enums.playground */,
+				4DDFC2B929708AAF00662BE2 /* ClousereAndFuncs.playground */,
+				4DDFC2BA2970925100662BE2 /* SwiftAvanzado.playground */,
 			);
 			path = Playgrounds;
 			sourceTree = "<group>";
