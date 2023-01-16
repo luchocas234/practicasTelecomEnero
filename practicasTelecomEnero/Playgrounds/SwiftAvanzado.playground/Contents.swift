@@ -101,3 +101,113 @@ for item in myArray{
         print("Es una clase")
     }
 }
+
+
+//Extensiones
+
+let myMeters: Double = 5000
+
+func metersToKm(meters: Double) -> Double {
+    return meters / 1000
+}
+
+print(metersToKm(meters: myMeters))
+
+//Agregamos una extension a la clase Double
+
+extension Double {
+    var km: Double {
+        return self / 1000
+    }
+    
+    var m: Double{
+        return self
+    }
+    
+    var cm: Double {
+        return self * 100
+    }
+    
+}
+
+// Con la extension ahora podemos solicitar por propiedades que nos devuelva el valor en Km Cm o M
+
+print(myMeters.cm)
+
+// Protocolos
+
+protocol PersonProtocol {
+    var name: String { get set }
+    var age: Int { get set }
+    
+    func fullName() -> String
+}
+
+struct Programmer: PersonProtocol {
+   
+    var name: String
+    var age: Int
+    var language: String
+    
+    func fullName() -> String {
+        return "El nombre es \(name), edad: \(age) y su lenguaje favorito es \(language)"
+    }
+}
+
+struct Teacher: PersonProtocol {
+    var name: String
+    var age: Int
+    var subject: String
+    
+    func fullName() -> String {
+        return "El nombre es \(name), edad: \(age) e imparte la asignatura de \(subject)"
+    }
+}
+
+let myProgrammer = Programmer(name: "Brais", age: 32, language: "Swift")
+let myTeacher = Teacher(name: "Juan", age: 50, subject: "Matemáticas")
+
+print(myProgrammer.fullName())
+print(myTeacher.fullName())
+
+// Protocolo delegado
+
+// Esta clase va a llamar a la segunda
+// A su vez también tiene asignado el Protogl SecondClass
+class FirstClass: SecondClassProtocol {
+   
+    func callSecond() {
+        let secondClass = SecondClass()
+        secondClass.delegate = self // Se le asigna el delegado a esta clase,
+        secondClass.callFirst() // esta funcion hace la llamada a la clase1 mediante el protocolo, luego termina en Func Call()
+    }
+    
+    func call() {
+        print("Estoy de vuelta!")
+    }
+    
+}
+
+protocol SecondClassProtocol {
+    
+    func call()
+    
+}
+
+class SecondClass {
+    //Se crea variable llamda delegate, que es la que sirve para poder darsela a su Delegado
+    var delegate: SecondClassProtocol?
+    
+    func callFirst() {
+        
+        sleep(5)
+        
+        delegate?.call()
+    }
+    
+}
+
+let firstClass = FirstClass()
+firstClass.callSecond()
+
+
