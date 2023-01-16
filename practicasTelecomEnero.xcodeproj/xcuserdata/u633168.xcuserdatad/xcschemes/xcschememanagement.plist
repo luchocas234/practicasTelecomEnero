@@ -81,6 +81,27 @@
 			<key>orderHint</key>
 			<integer>4</integer>
 		</dict>
+		<key>algoritmosOrdenamiento (Playground) 1.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
+		<key>algoritmosOrdenamiento (Playground) 2.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
+		<key>algoritmosOrdenamiento (Playground).xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
 		<key>clousereAndFuncs (Playground) 1.xcscheme</key>
 		<dict>
 			<key>isShown</key>
