@@ -18,13 +18,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sp9-4k-JPQ">
-                                <rect key="frame" x="175.66666666666666" y="259" width="42" height="21"/>
+                                <rect key="frame" x="30" y="83" width="333" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evg-Xf-TDJ">
-                                <rect key="frame" x="20" y="409" width="353" height="35"/>
+                                <rect key="frame" x="20" y="119" width="353" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
@@ -32,25 +32,36 @@
                                 </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rhc-i4-Nsg">
-                                <rect key="frame" x="0.0" y="489" width="393" height="216"/>
+                                <rect key="frame" x="0.0" y="169" width="393" height="216"/>
                             </pickerView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="9gi-DN-2oG">
+                                <rect key="frame" x="0.0" y="400" width="393" height="26"/>
+                                <connections>
+                                    <action selector="myPageControlAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="HWY-OH-n9E"/>
+                                </connections>
+                            </pageControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <color key="tintColor" name="AccentColor"/>
                         <constraints>
-                            <constraint firstItem="evg-Xf-TDJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="3Eu-Cd-I2V"/>
-                            <constraint firstItem="Sp9-4k-JPQ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="5ha-BF-aaU"/>
-                            <constraint firstItem="Sp9-4k-JPQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="I52-1G-HtO"/>
-                            <constraint firstItem="rhc-i4-Nsg" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ben-mk-lgw"/>
-                            <constraint firstItem="rhc-i4-Nsg" firstAttribute="top" secondItem="evg-Xf-TDJ" secondAttribute="bottom" constant="45" id="fnX-hD-GBC"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="evg-Xf-TDJ" secondAttribute="trailing" constant="20" id="gNp-Kn-1mM"/>
-                            <constraint firstItem="rhc-i4-Nsg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tcj-UJ-Fts"/>
-                            <constraint firstItem="evg-Xf-TDJ" firstAttribute="top" secondItem="Sp9-4k-JPQ" secondAttribute="bottom" constant="129" id="zP8-oN-6ZG"/>
+                            <constraint firstItem="rhc-i4-Nsg" firstAttribute="top" secondItem="evg-Xf-TDJ" secondAttribute="bottom" constant="15" id="0E6-e7-9Pb"/>
+                            <constraint firstItem="Sp9-4k-JPQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="2kG-Bm-0gc"/>
+                            <constraint firstItem="evg-Xf-TDJ" firstAttribute="top" secondItem="Sp9-4k-JPQ" secondAttribute="bottom" constant="15" id="DSf-x7-Uxo"/>
+                            <constraint firstItem="rhc-i4-Nsg" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="G2a-vI-Oem"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Sp9-4k-JPQ" secondAttribute="trailing" constant="30" id="MsH-Qf-HYW"/>
+                            <constraint firstItem="rhc-i4-Nsg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Qdf-bz-0Oa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9gi-DN-2oG" secondAttribute="trailing" id="WsL-X8-w6k"/>
+                            <constraint firstItem="9gi-DN-2oG" firstAttribute="top" secondItem="rhc-i4-Nsg" secondAttribute="bottom" constant="15" id="XAU-IZ-Jg2"/>
+                            <constraint firstItem="Sp9-4k-JPQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="flX-Xh-QRc"/>
+                            <constraint firstItem="evg-Xf-TDJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="qJ0-1C-YgI"/>
+                            <constraint firstItem="9gi-DN-2oG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vn8-jX-JOf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="evg-Xf-TDJ" secondAttribute="trailing" constant="20" id="xLh-yD-baz"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="myButton" destination="evg-Xf-TDJ" id="iel-r2-BgS"/>
+                        <outlet property="myPageControl" destination="9gi-DN-2oG" id="c2x-aW-pAJ"/>
                         <outlet property="myPickerView" destination="rhc-i4-Nsg" id="VZV-uk-Yry"/>
                     </connections>
                 </viewController>
