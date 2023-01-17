@@ -40,6 +40,28 @@
                                     <action selector="myPageControlAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="HWY-OH-n9E"/>
                                 </connections>
                             </pageControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="SlZ-t8-W6K">
+                                <rect key="frame" x="0.0" y="441" width="393" height="32"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                                <connections>
+                                    <action selector="mySegmentSection:" destination="BYZ-38-t0r" eventType="valueChanged" id="wxs-PE-LT3"/>
+                                </connections>
+                            </segmentedControl>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="V4z-Tj-nHP">
+                                <rect key="frame" x="-2" y="487" width="397" height="31"/>
+                                <connections>
+                                    <action selector="mySlideAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="4ym-tn-0y2"/>
+                                </connections>
+                            </slider>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="n8a-hc-BtY">
+                                <rect key="frame" x="149" y="532" width="94" height="32"/>
+                                <connections>
+                                    <action selector="myStepperAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="wm8-QT-z1x"/>
+                                </connections>
+                            </stepper>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -47,14 +69,23 @@
                         <constraints>
                             <constraint firstItem="rhc-i4-Nsg" firstAttribute="top" secondItem="evg-Xf-TDJ" secondAttribute="bottom" constant="15" id="0E6-e7-9Pb"/>
                             <constraint firstItem="Sp9-4k-JPQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="2kG-Bm-0gc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="n8a-hc-BtY" secondAttribute="trailing" constant="150" id="653-fd-xHk"/>
+                            <constraint firstItem="n8a-hc-BtY" firstAttribute="top" secondItem="V4z-Tj-nHP" secondAttribute="bottom" constant="15" id="B6F-cK-GBg"/>
                             <constraint firstItem="evg-Xf-TDJ" firstAttribute="top" secondItem="Sp9-4k-JPQ" secondAttribute="bottom" constant="15" id="DSf-x7-Uxo"/>
                             <constraint firstItem="rhc-i4-Nsg" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="G2a-vI-Oem"/>
+                            <constraint firstItem="V4z-Tj-nHP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Jq5-TF-zBL"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Sp9-4k-JPQ" secondAttribute="trailing" constant="30" id="MsH-Qf-HYW"/>
                             <constraint firstItem="rhc-i4-Nsg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Qdf-bz-0Oa"/>
+                            <constraint firstItem="n8a-hc-BtY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="149" id="S15-Tx-cXt"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9gi-DN-2oG" secondAttribute="trailing" id="WsL-X8-w6k"/>
                             <constraint firstItem="9gi-DN-2oG" firstAttribute="top" secondItem="rhc-i4-Nsg" secondAttribute="bottom" constant="15" id="XAU-IZ-Jg2"/>
+                            <constraint firstItem="V4z-Tj-nHP" firstAttribute="top" secondItem="SlZ-t8-W6K" secondAttribute="bottom" constant="15" id="dFd-zj-gZS"/>
+                            <constraint firstItem="SlZ-t8-W6K" firstAttribute="top" secondItem="9gi-DN-2oG" secondAttribute="bottom" constant="15" id="dU7-1h-qRq"/>
                             <constraint firstItem="Sp9-4k-JPQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="flX-Xh-QRc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SlZ-t8-W6K" secondAttribute="trailing" id="iI2-OM-MUK"/>
                             <constraint firstItem="evg-Xf-TDJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="qJ0-1C-YgI"/>
+                            <constraint firstItem="SlZ-t8-W6K" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qmo-8d-FqH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="V4z-Tj-nHP" secondAttribute="trailing" id="tdR-U1-wAE"/>
                             <constraint firstItem="9gi-DN-2oG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vn8-jX-JOf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="evg-Xf-TDJ" secondAttribute="trailing" constant="20" id="xLh-yD-baz"/>
                         </constraints>
@@ -63,6 +94,9 @@
                         <outlet property="myButton" destination="evg-Xf-TDJ" id="iel-r2-BgS"/>
                         <outlet property="myPageControl" destination="9gi-DN-2oG" id="c2x-aW-pAJ"/>
                         <outlet property="myPickerView" destination="rhc-i4-Nsg" id="VZV-uk-Yry"/>
+                        <outlet property="mySegmentSection" destination="SlZ-t8-W6K" id="aWX-AJ-ib3"/>
+                        <outlet property="mySlide" destination="V4z-Tj-nHP" id="IKr-pk-lxO"/>
+                        <outlet property="myStepper" destination="n8a-hc-BtY" id="QH7-KP-Yas"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
