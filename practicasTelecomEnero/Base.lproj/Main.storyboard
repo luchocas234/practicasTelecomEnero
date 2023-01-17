@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -22,28 +23,35 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Im-iY-dNv">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evg-Xf-TDJ">
                                 <rect key="frame" x="20" y="409" width="353" height="35"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
-                                    <action selector="myButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qWi-vC-vO4"/>
+                                    <action selector="myButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rgv-0C-ijm"/>
                                 </connections>
                             </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rhc-i4-Nsg">
+                                <rect key="frame" x="0.0" y="489" width="393" height="216"/>
+                            </pickerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="tintColor" name="AccentColor"/>
                         <constraints>
+                            <constraint firstItem="evg-Xf-TDJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="3Eu-Cd-I2V"/>
                             <constraint firstItem="Sp9-4k-JPQ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="5ha-BF-aaU"/>
                             <constraint firstItem="Sp9-4k-JPQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="I52-1G-HtO"/>
-                            <constraint firstItem="0Im-iY-dNv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Kdl-NG-8ST"/>
-                            <constraint firstItem="0Im-iY-dNv" firstAttribute="top" secondItem="Sp9-4k-JPQ" secondAttribute="bottom" constant="129" id="QMG-CE-FnW"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0Im-iY-dNv" secondAttribute="trailing" constant="20" id="W44-kY-AbK"/>
-                            <constraint firstItem="0Im-iY-dNv" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="bWz-cO-VB9"/>
+                            <constraint firstItem="rhc-i4-Nsg" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ben-mk-lgw"/>
+                            <constraint firstItem="rhc-i4-Nsg" firstAttribute="top" secondItem="evg-Xf-TDJ" secondAttribute="bottom" constant="45" id="fnX-hD-GBC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="evg-Xf-TDJ" secondAttribute="trailing" constant="20" id="gNp-Kn-1mM"/>
+                            <constraint firstItem="rhc-i4-Nsg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tcj-UJ-Fts"/>
+                            <constraint firstItem="evg-Xf-TDJ" firstAttribute="top" secondItem="Sp9-4k-JPQ" secondAttribute="bottom" constant="129" id="zP8-oN-6ZG"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="myButton" destination="0Im-iY-dNv" id="fDI-KT-x31"/>
+                        <outlet property="myButton" destination="evg-Xf-TDJ" id="iel-r2-BgS"/>
+                        <outlet property="myPickerView" destination="rhc-i4-Nsg" id="VZV-uk-Yry"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -52,6 +60,9 @@
         </scene>
     </scenes>
     <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
