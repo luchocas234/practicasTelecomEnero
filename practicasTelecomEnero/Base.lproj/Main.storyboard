@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mhe-is-ewI">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -14,17 +14,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="practicasTelecomEnero" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sp9-4k-JPQ">
-                                <rect key="frame" x="30" y="83" width="333" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evg-Xf-TDJ">
-                                <rect key="frame" x="20" y="119" width="353" height="35"/>
+                                <rect key="frame" x="20" y="50" width="374" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
@@ -32,16 +26,16 @@
                                 </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rhc-i4-Nsg">
-                                <rect key="frame" x="0.0" y="169" width="393" height="216"/>
+                                <rect key="frame" x="0.0" y="100" width="414" height="216"/>
                             </pickerView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="9gi-DN-2oG">
-                                <rect key="frame" x="0.0" y="400" width="393" height="26"/>
+                                <rect key="frame" x="0.0" y="331" width="414" height="26"/>
                                 <connections>
                                     <action selector="myPageControlAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="HWY-OH-n9E"/>
                                 </connections>
                             </pageControl>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="SlZ-t8-W6K">
-                                <rect key="frame" x="0.0" y="441" width="393" height="32"/>
+                                <rect key="frame" x="0.0" y="372" width="414" height="32"/>
                                 <segments>
                                     <segment title="First"/>
                                     <segment title="Second"/>
@@ -51,45 +45,52 @@
                                 </connections>
                             </segmentedControl>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="V4z-Tj-nHP">
-                                <rect key="frame" x="-2" y="487" width="397" height="31"/>
+                                <rect key="frame" x="-2" y="418" width="418" height="31"/>
                                 <connections>
                                     <action selector="mySlideAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="4ym-tn-0y2"/>
                                 </connections>
                             </slider>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="n8a-hc-BtY">
-                                <rect key="frame" x="149" y="532" width="94" height="32"/>
+                                <rect key="frame" x="80" y="463" width="254" height="32"/>
                                 <connections>
                                     <action selector="myStepperAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="wm8-QT-z1x"/>
                                 </connections>
                             </stepper>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zrq-uV-IMe">
+                                <rect key="frame" x="172" y="505" width="72" height="31"/>
+                                <connections>
+                                    <action selector="mySwitchAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="as3-wJ-xte"/>
+                                </connections>
+                            </switch>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <color key="tintColor" name="AccentColor"/>
                         <constraints>
-                            <constraint firstItem="rhc-i4-Nsg" firstAttribute="top" secondItem="evg-Xf-TDJ" secondAttribute="bottom" constant="15" id="0E6-e7-9Pb"/>
-                            <constraint firstItem="Sp9-4k-JPQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="2kG-Bm-0gc"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="n8a-hc-BtY" secondAttribute="trailing" constant="150" id="653-fd-xHk"/>
-                            <constraint firstItem="n8a-hc-BtY" firstAttribute="top" secondItem="V4z-Tj-nHP" secondAttribute="bottom" constant="15" id="B6F-cK-GBg"/>
-                            <constraint firstItem="evg-Xf-TDJ" firstAttribute="top" secondItem="Sp9-4k-JPQ" secondAttribute="bottom" constant="15" id="DSf-x7-Uxo"/>
-                            <constraint firstItem="rhc-i4-Nsg" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="G2a-vI-Oem"/>
-                            <constraint firstItem="V4z-Tj-nHP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Jq5-TF-zBL"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Sp9-4k-JPQ" secondAttribute="trailing" constant="30" id="MsH-Qf-HYW"/>
-                            <constraint firstItem="rhc-i4-Nsg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Qdf-bz-0Oa"/>
-                            <constraint firstItem="n8a-hc-BtY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="149" id="S15-Tx-cXt"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9gi-DN-2oG" secondAttribute="trailing" id="WsL-X8-w6k"/>
-                            <constraint firstItem="9gi-DN-2oG" firstAttribute="top" secondItem="rhc-i4-Nsg" secondAttribute="bottom" constant="15" id="XAU-IZ-Jg2"/>
-                            <constraint firstItem="V4z-Tj-nHP" firstAttribute="top" secondItem="SlZ-t8-W6K" secondAttribute="bottom" constant="15" id="dFd-zj-gZS"/>
-                            <constraint firstItem="SlZ-t8-W6K" firstAttribute="top" secondItem="9gi-DN-2oG" secondAttribute="bottom" constant="15" id="dU7-1h-qRq"/>
-                            <constraint firstItem="Sp9-4k-JPQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="flX-Xh-QRc"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SlZ-t8-W6K" secondAttribute="trailing" id="iI2-OM-MUK"/>
-                            <constraint firstItem="evg-Xf-TDJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="qJ0-1C-YgI"/>
-                            <constraint firstItem="SlZ-t8-W6K" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qmo-8d-FqH"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="V4z-Tj-nHP" secondAttribute="trailing" id="tdR-U1-wAE"/>
-                            <constraint firstItem="9gi-DN-2oG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vn8-jX-JOf"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="evg-Xf-TDJ" secondAttribute="trailing" constant="20" id="xLh-yD-baz"/>
+                            <constraint firstAttribute="trailing" secondItem="V4z-Tj-nHP" secondAttribute="trailing" id="007-Tw-uoo"/>
+                            <constraint firstItem="n8a-hc-BtY" firstAttribute="top" secondItem="V4z-Tj-nHP" secondAttribute="bottom" constant="15" id="2OS-Vw-xxO"/>
+                            <constraint firstItem="evg-Xf-TDJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="50" id="3Mb-oT-Oi8"/>
+                            <constraint firstItem="SlZ-t8-W6K" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5SS-qz-XuQ"/>
+                            <constraint firstItem="9gi-DN-2oG" firstAttribute="top" secondItem="rhc-i4-Nsg" secondAttribute="bottom" constant="15" id="7Az-4z-ukg"/>
+                            <constraint firstItem="9gi-DN-2oG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="DHc-3R-qxE"/>
+                            <constraint firstItem="rhc-i4-Nsg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="I9G-oR-JBT"/>
+                            <constraint firstAttribute="trailing" secondItem="evg-Xf-TDJ" secondAttribute="trailing" constant="20" id="L3N-tG-lGG"/>
+                            <constraint firstItem="evg-Xf-TDJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="LMd-Vc-RMZ"/>
+                            <constraint firstItem="Zrq-uV-IMe" firstAttribute="top" secondItem="n8a-hc-BtY" secondAttribute="bottom" constant="10" id="MN1-Fw-aPN"/>
+                            <constraint firstItem="n8a-hc-BtY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="MVJ-I8-jYU"/>
+                            <constraint firstItem="rhc-i4-Nsg" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="MyE-Wc-Huj"/>
+                            <constraint firstItem="SlZ-t8-W6K" firstAttribute="top" secondItem="9gi-DN-2oG" secondAttribute="bottom" constant="15" id="PmJ-sC-soT"/>
+                            <constraint firstItem="rhc-i4-Nsg" firstAttribute="top" secondItem="evg-Xf-TDJ" secondAttribute="bottom" constant="15" id="bh1-rZ-G5L"/>
+                            <constraint firstItem="Zrq-uV-IMe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="172" id="hQ6-Ye-LHc"/>
+                            <constraint firstAttribute="trailing" secondItem="SlZ-t8-W6K" secondAttribute="trailing" id="j44-bp-9Pf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="n8a-hc-BtY" secondAttribute="trailing" constant="80" id="ll1-TY-fNu"/>
+                            <constraint firstItem="V4z-Tj-nHP" firstAttribute="top" secondItem="SlZ-t8-W6K" secondAttribute="bottom" constant="15" id="ltv-dH-AEZ"/>
+                            <constraint firstAttribute="trailing" secondItem="9gi-DN-2oG" secondAttribute="trailing" id="s7U-Rv-ZjR"/>
+                            <constraint firstItem="V4z-Tj-nHP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="t5e-rY-Pyc"/>
+                            <constraint firstAttribute="trailing" secondItem="Zrq-uV-IMe" secondAttribute="trailing" constant="172" id="waQ-M1-sFL"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="ynx-rY-kwC"/>
                     <connections>
                         <outlet property="myButton" destination="evg-Xf-TDJ" id="iel-r2-BgS"/>
                         <outlet property="myPageControl" destination="9gi-DN-2oG" id="c2x-aW-pAJ"/>
@@ -97,11 +98,40 @@
                         <outlet property="mySegmentSection" destination="SlZ-t8-W6K" id="aWX-AJ-ib3"/>
                         <outlet property="mySlide" destination="V4z-Tj-nHP" id="IKr-pk-lxO"/>
                         <outlet property="myStepper" destination="n8a-hc-BtY" id="QH7-KP-Yas"/>
+                        <outlet property="mySwitch" destination="Zrq-uV-IMe" id="TZ6-mE-ZBZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="47" y="4"/>
+            <point key="canvasLocation" x="956.52173913043487" y="3.3482142857142856"/>
+        </scene>
+        <!--ViewPractice-->
+        <scene sceneID="bIk-8d-FRj">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ViewPractice" id="7Pp-2U-hy6" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="EDo-nW-CwA"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OmQ-8s-Se8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="561" y="-360"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Q81-5h-Wic">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mhe-is-ewI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="u7A-YH-4Bo">
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7Pp-2U-hy6" kind="relationship" relationship="rootViewController" id="cI7-ns-7lB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YNZ-0X-LwL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="46.376811594202906" y="3.3482142857142856"/>
         </scene>
     </scenes>
     <resources>

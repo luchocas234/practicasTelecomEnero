@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Practice Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="ViewPracticeController" customModule="practicasTelecomEnero" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pvo-ft-yTP">
+                                <rect key="frame" x="0.0" y="76" width="393" height="742"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zfW-zf-Lyd">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="551"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q0l-jg-I9q">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="128"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ui VIEW" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U08-76-2eY">
+                                                        <rect key="frame" x="148" y="54" width="62" height="21"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                                <color key="tintColor" red="0.43618250310000001" green="0.87472826240000001" blue="0.58735952540000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </view>
+                                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HA5-1B-CUt">
+                                                <rect key="frame" x="0.0" y="128" width="393" height="295"/>
+                                                <standardMapConfiguration key="preferredConfiguration"/>
+                                            </mapView>
+                                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ugh-9l-V2D">
+                                                <rect key="frame" x="0.0" y="423" width="393" height="128"/>
+                                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="128" id="qBH-Nj-KFD"/>
+                                                </constraints>
+                                                <wkWebViewConfiguration key="configuration">
+                                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                                    <wkPreferences key="preferences"/>
+                                                </wkWebViewConfiguration>
+                                            </wkWebView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="HA5-1B-CUt" firstAttribute="centerY" secondItem="zfW-zf-Lyd" secondAttribute="centerY" id="xlg-5u-mYg"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="zfW-zf-Lyd" firstAttribute="top" secondItem="3v8-fg-gMe" secondAttribute="top" id="1In-Ta-40O"/>
+                                    <constraint firstAttribute="bottom" secondItem="zfW-zf-Lyd" secondAttribute="bottom" constant="191" id="1SA-eJ-pCM"/>
+                                    <constraint firstItem="3v8-fg-gMe" firstAttribute="trailing" secondItem="zfW-zf-Lyd" secondAttribute="trailing" id="dNk-1P-JAW"/>
+                                    <constraint firstAttribute="trailing" secondItem="zfW-zf-Lyd" secondAttribute="trailing" id="oSu-ld-bNf"/>
+                                    <constraint firstItem="zfW-zf-Lyd" firstAttribute="leading" secondItem="3v8-fg-gMe" secondAttribute="leading" id="w5G-6B-jEP"/>
+                                    <constraint firstItem="3v8-fg-gMe" firstAttribute="bottom" secondItem="zfW-zf-Lyd" secondAttribute="bottom" constant="191" id="xmv-bk-wfI"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="AqM-5T-g3b"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="3v8-fg-gMe"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Pvo-ft-yTP" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="XPy-mt-PIN"/>
+                            <constraint firstItem="Pvo-ft-yTP" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="17" id="jtS-f8-5Fy"/>
+                            <constraint firstItem="Pvo-ft-yTP" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="mhK-M7-5nS"/>
+                            <constraint firstItem="Pvo-ft-yTP" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="zye-jG-4yO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myMaps" destination="HA5-1B-CUt" id="HRC-Ym-WYk"/>
+                        <outlet property="myWeb" destination="ugh-9l-V2D" id="9Yd-Is-bxC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="41.984732824427482" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

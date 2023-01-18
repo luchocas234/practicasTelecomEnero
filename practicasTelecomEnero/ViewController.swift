@@ -23,6 +23,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var myStepper: UIStepper!
     
     
+    @IBOutlet weak var mySwitch: UISwitch!
     //Variables
     
     let pickerViewValues = ["Elemento 1","Elemento 2","Elemento 3","elemento 4","Elemento 5"]
@@ -37,6 +38,7 @@ class ViewController: UIViewController {
         myButton.tintColor = .blue
         myButton.setTitleColor(.white, for: .normal)
         //Picker
+        myPickerView.isHidden = true
         myPickerView.backgroundColor = .lightGray
         myPickerView.dataSource = self // el encargado de darle los datos al Picker
         myPickerView.delegate = self
@@ -63,7 +65,8 @@ class ViewController: UIViewController {
         myStepper.minimumValue = 1
         myStepper.maximumValue = Double(pickerViewValues.count)
         
-        
+        //Switch
+        mySwitch.isOn = false
         
         
         
@@ -109,6 +112,16 @@ class ViewController: UIViewController {
         mySlide.value = Float(value)
         
     }
+    
+    @IBAction func mySwitchAction(_ sender: Any) {
+        if mySwitch.isOn{
+            myPickerView.isHidden = false
+        }else{
+            myPickerView.isHidden = true
+        }
+    }
+    
+    
     
 }
 

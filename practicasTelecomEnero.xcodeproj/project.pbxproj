@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D9A1940297839C400DF728B /* ViewPractice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D9A193F297839C400DF728B /* ViewPractice.storyboard */; };
+		4D9A1943297839F400DF728B /* ViewPracticeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9A1942297839F400DF728B /* ViewPracticeController.swift */; };
 		4DDFC29F296F375600662BE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFC29E296F375600662BE2 /* AppDelegate.swift */; };
 		4DDFC2A1296F375600662BE2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFC2A0296F375600662BE2 /* SceneDelegate.swift */; };
 		4DDFC2A3296F375600662BE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFC2A2296F375600662BE2 /* ViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D9A193F297839C400DF728B /* ViewPractice.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ViewPractice.storyboard; sourceTree = "<group>"; };
+		4D9A1942297839F400DF728B /* ViewPracticeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPracticeController.swift; sourceTree = "<group>"; };
 		4DC43E1B2975B93700F926AE /* algoritmosOrdenamiento.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = algoritmosOrdenamiento.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4DDFC29B296F375600662BE2 /* practicasTelecomEnero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = practicasTelecomEnero.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DDFC29E296F375600662BE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +49,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D9A1941297839CC00DF728B /* Viewpractice */ = {
+			isa = PBXGroup;
+			children = (
+				4D9A193F297839C400DF728B /* ViewPractice.storyboard */,
+				4D9A1942297839F400DF728B /* ViewPracticeController.swift */,
+			);
+			path = Viewpractice;
+			sourceTree = "<group>";
+		};
 		4DDFC292296F375600662BE2 = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +82,7 @@
 				4DDFC2A0296F375600662BE2 /* SceneDelegate.swift */,
 				4DDFC2A2296F375600662BE2 /* ViewController.swift */,
 				4DDFC2A4296F375600662BE2 /* Main.storyboard */,
+				4D9A1941297839CC00DF728B /* Viewpractice */,
 				4DDFC2AA296F375800662BE2 /* Assets.xcassets */,
 				4DDFC2AC296F375800662BE2 /* LaunchScreen.storyboard */,
 				4DDFC2AF296F375800662BE2 /* Info.plist */,
@@ -148,6 +162,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D9A1940297839C400DF728B /* ViewPractice.storyboard in Resources */,
 				4DDFC2AE296F375800662BE2 /* LaunchScreen.storyboard in Resources */,
 				4DDFC2AB296F375800662BE2 /* Assets.xcassets in Resources */,
 				4DDFC2A6296F375600662BE2 /* Main.storyboard in Resources */,
@@ -161,6 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D9A1943297839F400DF728B /* ViewPracticeController.swift in Sources */,
 				4DDFC2A3296F375600662BE2 /* ViewController.swift in Sources */,
 				4DDFC29F296F375600662BE2 /* AppDelegate.swift in Sources */,
 				4DDFC2A9296F375600662BE2 /* practicasTelecomEnero.xcdatamodeld in Sources */,
