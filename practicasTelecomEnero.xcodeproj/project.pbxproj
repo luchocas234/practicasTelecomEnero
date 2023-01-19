@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4D5F003E29797D1100B5691C /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5F003D29797D1100B5691C /* PageViewController.swift */; };
+		4D5F0040297992C000B5691C /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5F003F297992C000B5691C /* BlueViewController.swift */; };
 		4D9A1940297839C400DF728B /* ViewPractice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D9A193F297839C400DF728B /* ViewPractice.storyboard */; };
 		4D9A1943297839F400DF728B /* ViewPracticeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9A1942297839F400DF728B /* ViewPracticeController.swift */; };
 		4DDFC29F296F375600662BE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFC29E296F375600662BE2 /* AppDelegate.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		4D5F003D29797D1100B5691C /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		4D5F003F297992C000B5691C /* BlueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueViewController.swift; sourceTree = "<group>"; };
 		4D9A193F297839C400DF728B /* ViewPractice.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ViewPractice.storyboard; sourceTree = "<group>"; };
 		4D9A1942297839F400DF728B /* ViewPracticeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPracticeController.swift; sourceTree = "<group>"; };
 		4DC43E1B2975B93700F926AE /* algoritmosOrdenamiento.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = algoritmosOrdenamiento.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -56,6 +58,7 @@
 			children = (
 				4D9A193F297839C400DF728B /* ViewPractice.storyboard */,
 				4D9A1942297839F400DF728B /* ViewPracticeController.swift */,
+				4D5F003F297992C000B5691C /* BlueViewController.swift */,
 			);
 			path = Viewpractice;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 				4DDFC29F296F375600662BE2 /* AppDelegate.swift in Sources */,
 				4DDFC2A9296F375600662BE2 /* practicasTelecomEnero.xcdatamodeld in Sources */,
 				4DDFC2A1296F375600662BE2 /* SceneDelegate.swift in Sources */,
+				4D5F0040297992C000B5691C /* BlueViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

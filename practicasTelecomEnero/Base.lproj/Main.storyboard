@@ -148,12 +148,48 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="mT2-pl-xe2" kind="relationship" relationship="rootViewController" id="GPL-kq-x2v"/>
+                        <segue destination="kNi-Hg-HjJ" kind="relationship" relationship="rootViewController" id="M1z-GR-W4a"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YNZ-0X-LwL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2339" y="165"/>
+            <point key="canvasLocation" x="-3378" y="139"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="rjg-6Y-uzN">
+            <objects>
+                <viewController id="kNi-Hg-HjJ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zZl-mp-bui">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5CW-5U-Ozt">
+                                <rect key="frame" x="0.0" y="70" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="B79-fO-5Go">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" id="ne8-HM-QxB">
+                                            <connections>
+                                                <segue destination="akU-EP-xis" kind="presentation" id="shb-R8-0Ke"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Item" id="U7Z-gK-jFj">
+                                            <connections>
+                                                <segue destination="mT2-pl-xe2" kind="show" id="shQ-0N-f2v"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RjC-Ov-Kxy"/>
+                        <color key="backgroundColor" systemColor="systemMintColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="MZa-or-Ley"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UtH-TL-rYt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2303" y="139"/>
         </scene>
         <!--Item-->
         <scene sceneID="xRY-ZQ-Obx">
@@ -165,17 +201,43 @@
             </objects>
             <point key="canvasLocation" x="-568" y="848"/>
         </scene>
-        <!--View Controller-->
+        <!--Blue View Controller-->
         <scene sceneID="rto-TQ-Mae">
             <objects>
-                <viewController storyboardIdentifier="vcBlue" id="oIZ-LL-JAr" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="vcBlue" id="oIZ-LL-JAr" customClass="BlueViewController" customModule="practicasTelecomEnero" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="88E-g5-7Qr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="yD9-XJ-OC6">
+                                <rect key="frame" x="0.0" y="62" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="oIZ-LL-JAr" id="Eus-s4-Jfj"/>
+                                </connections>
+                            </searchBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="goz-BC-abV">
+                                <rect key="frame" x="186" y="437.5" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Ylr-Ge-P7F"/>
                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="goz-BC-abV" firstAttribute="centerX" secondItem="88E-g5-7Qr" secondAttribute="centerX" id="EFM-N7-eM7"/>
+                            <constraint firstItem="yD9-XJ-OC6" firstAttribute="trailing" secondItem="Ylr-Ge-P7F" secondAttribute="trailing" id="Frm-WC-W98"/>
+                            <constraint firstItem="yD9-XJ-OC6" firstAttribute="top" secondItem="Ylr-Ge-P7F" secondAttribute="top" constant="14" id="NaG-gR-28e"/>
+                            <constraint firstItem="yD9-XJ-OC6" firstAttribute="leading" secondItem="Ylr-Ge-P7F" secondAttribute="leading" id="g3Q-uO-Hrw"/>
+                            <constraint firstItem="goz-BC-abV" firstAttribute="centerY" secondItem="88E-g5-7Qr" secondAttribute="centerY" id="s4r-1b-ePt"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="myLabelsearch" destination="goz-BC-abV" id="K2d-nY-5ob"/>
+                        <outlet property="mySearchBar" destination="yD9-XJ-OC6" id="9rq-3x-dNS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jSU-yw-M0U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -196,6 +258,22 @@
             </objects>
             <point key="canvasLocation" x="807" y="848"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="OzN-5w-7Gf">
+            <objects>
+                <viewController id="akU-EP-xis" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RHv-uD-ghm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="v8c-hz-gEN"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xh6-JV-BWi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UKs-KJ-KKA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2304" y="812"/>
+        </scene>
     </scenes>
     <resources>
         <namedColor name="AccentColor">
@@ -207,8 +285,14 @@
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
